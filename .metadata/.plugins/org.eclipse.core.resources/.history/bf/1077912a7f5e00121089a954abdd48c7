@@ -1,0 +1,43 @@
+package taxi.route;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Chronometer;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	
+	private Button btnStart;
+	private Chronometer chron;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        btnStart = (Button) findViewById(R.id.buttonStart);
+        chron = (Chronometer) findViewById(R.id.chronometer1);
+        btnStart.setOnClickListener(new OnClickListener() {
+        	public void onClick(android.view.View v) {
+        		Toast.makeText(getApplicationContext(), "Starting...", Toast.LENGTH_LONG).show();
+        		chron.start();
+        		Toast.makeText(getApplicationContext(), "Started!", Toast.LENGTH_LONG).show();
+        		
+        	}
+        });
+        
+        	
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+ 
+    
+}
