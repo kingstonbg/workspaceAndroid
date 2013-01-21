@@ -139,20 +139,24 @@ containing a value of this type.
         public static final int menu_bg=0x7f020002;
     }
     public static final class id {
-        public static final int buttonExit=0x7f050008;
-        public static final int buttonSettings=0x7f050007;
-        public static final int buttonStart=0x7f050005;
-        public static final int buttonStop=0x7f050006;
-        public static final int map=0x7f050004;
-        public static final int menu_settings=0x7f05000d;
+        public static final int btnLocation=0x7f050006;
+        public static final int buttonExit=0x7f05000c;
+        public static final int buttonSettings=0x7f05000b;
+        public static final int buttonStart=0x7f050009;
+        public static final int buttonStop=0x7f05000a;
+        public static final int editTextLocation=0x7f050004;
+        public static final int layButtonH=0x7f050005;
+        public static final int layloadingH=0x7f050007;
+        public static final int menu_settings=0x7f050011;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
+        public static final int progressBar1=0x7f050008;
         public static final int satellite=0x7f050002;
-        public static final int spinnerCurrency=0x7f05000c;
-        public static final int spinnerUser=0x7f05000a;
+        public static final int spinnerCurrency=0x7f050010;
+        public static final int spinnerUser=0x7f05000e;
         public static final int terrain=0x7f050003;
-        public static final int textViewCurrency=0x7f05000b;
-        public static final int textViewUser=0x7f050009;
+        public static final int textViewCurrency=0x7f05000f;
+        public static final int textViewUser=0x7f05000d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

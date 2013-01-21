@@ -39,7 +39,8 @@ public class MainMenu extends Activity {
 		Button btnStart = (Button) findViewById(R.id.buttonStart);
 		btnStart.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				//start MainActivity.java
+				Intent intent = new Intent(MainMenu.this, MainActivity.class);
+				MainMenu.this.startActivity(intent);
 			}
 		});
 	}
