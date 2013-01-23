@@ -32,7 +32,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	private LocationListener locationListener=null;   
 	  
 	private Button btnGetLocation = null;  
-	private EditText editLocation = null;   
+	private EditText editLocation = null;
+	private EditText editDistance = null;
 	private ProgressBar pb =null;  
 	   
 	private static final String TAG = "Debug";  
@@ -49,7 +50,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		pb.setVisibility(View.INVISIBLE);
 
 		editLocation = (EditText) findViewById(R.id.editTextLocation);
-
+		editDistance = (EditText) findViewById(R.id.editTextDistance);
 		btnGetLocation = (Button) findViewById(R.id.btnLocation);
 		btnGetLocation.setOnClickListener(this);
 
@@ -62,7 +63,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 			Log.v(TAG, "onClick");
 
-			editLocation.setText("Please!! move your device to"
+			editLocation.setText("Please move your device to"
 					+ " see the changes in coordinates." + "\nWait..");
 
 			pb.setVisibility(View.VISIBLE);
@@ -91,14 +92,12 @@ public class MainActivity extends Activity implements OnClickListener {
 	
 	protected void alertbox(String title, String mymessage) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage("Your Device's GPS is Disable")
+		builder.setMessage("Your Device's GPS is Disabled")
 				.setCancelable(false)
 				.setTitle("** Gps Status **")
 				.setPositiveButton("Gps On",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
-								// finish the current activity
-								// AlertBoxAdvance.this.finish();
 								Intent myIntent = new Intent(Settings.ACTION_SECURITY_SETTINGS);
 								startActivity(myIntent);
 								dialog.cancel();
@@ -107,7 +106,6 @@ public class MainActivity extends Activity implements OnClickListener {
 				.setNegativeButton("Cancel",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
-								// cancel the dialog box
 								dialog.cancel();
 							}
 						});
@@ -123,16 +121,34 @@ public class MainActivity extends Activity implements OnClickListener {
     }
     
 	private class MyLocationListener implements LocationListener {
+		
+		static final double eQuatorialEarthRadius = 6378.1370D;
+	    static final double d2r = (Math.PI / 180D);
+	    
+	    double dlat;	double dlon; //distance
+	    double lat1;	double lon1; //latitude
+	    double lat2 = 0;	double lon2 = 0; //longitude
+
 		@Override
 		public void onLocationChanged(Location loc) {
-
+			
+			String distance;
+			
+			lat1 = lat2;
+			lon1 = lon2;
+			
+			lat2 = loc.getLatitude();
+			lon2 = loc.getLongitude();
+			
 			editLocation.setText("");
+			editDistance.setText("");
 			pb.setVisibility(View.INVISIBLE);
 			Toast.makeText(
 					getBaseContext(),
 					"Location changed : Lat: " + loc.getLatitude() + " Lng: "
 							+ loc.getLongitude(), Toast.LENGTH_SHORT).show();
 			String longitude = "Longitude: " + loc.getLongitude();
+			lon1 = loc.getLongitude();
 			Log.v(TAG, longitude);
 			String latitude = "Latitude: " + loc.getLatitude();
 			Log.v(TAG, latitude);
@@ -150,11 +166,39 @@ public class MainActivity extends Activity implements OnClickListener {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
+			
+			distance = processKm(HaversineKM(lat1, lon1, lat2, lon2));
+			
 			String s = longitude + "\n" + latitude
 					+ "\n\nMy Currrent City is: " + cityName;
 			editLocation.setText(s);
+			editDistance.setText(distance);
 		}
+		
+		public double HaversineKM(double lat1, double lon1, double lat2, double lon2) {
+			dlon = (lon2 - lon1) * d2r;
+			dlat = (lat2 - lat1) * d2r;
+			double a = Math.pow(Math.sin(dlat/ 2D), 2D) + 
+					Math.cos(lat1*d2r) * Math.cos(lat2*d2r) *
+					Math.pow(Math.sin(dlon / 2D), 2D);
+			double c = 2D * Math.atan2(Math.sqrt(a), Math.sqrt(1D - a ));
+			double distanceInKm = eQuatorialEarthRadius * c;
+			Math.round(distanceInKm);
+			
+			return distanceInKm;
+		}
+		
+		public String processKm(double distance) {
+			String result = "error";
+			if (distance<1) {
+				distance = 1000D * distance;
+				result = distance + "m";
+			}
+			else 
+				result = distance + "km";
+			
+			return result;
+	    }
 
 		@Override
 		public void onProviderDisabled(String provider) {

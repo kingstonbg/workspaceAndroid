@@ -23,6 +23,13 @@
         <requestFocus>
         </requestFocus>
     </EditText>
+    
+    <EditText 
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:editable="false" />"
 
     <LinearLayout
         android:id="@+id/layButtonH"
