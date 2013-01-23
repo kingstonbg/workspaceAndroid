@@ -1,7 +1,6 @@
 package taxi.route;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Locale;
 import android.provider.Settings;
@@ -211,16 +210,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		public String setDistance(double distance) {
 			String result = "";
 			if (km)
-				return result = round(distance, 3, BigDecimal.ROUND_HALF_UP) + "km";
+				return result = distance + "km";
 			else
-				return result = round(distance, 2, BigDecimal.ROUND_HALF_UP) + "m";
-		}
-		
-		public double round(double unrounded, int precision, int roundingMode)
-		{
-		    BigDecimal bd = new BigDecimal(unrounded);
-		    BigDecimal rounded = bd.setScale(precision, roundingMode);
-		    return rounded.doubleValue();
+				return result = distance + "m";
 		}
 		
 		@Override

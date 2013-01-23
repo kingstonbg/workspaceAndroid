@@ -1,7 +1,6 @@
 package taxi.route;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Locale;
 import android.provider.Settings;
@@ -136,7 +135,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		@Override
 		public void onLocationChanged(Location loc) {
 			
-			double distance = 0;
+			double distance;
 			
 			lat1 = lat2;
 			lon1 = lon2;
@@ -170,14 +169,14 @@ public class MainActivity extends Activity implements OnClickListener {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			if (lat1!=0) {
+			
 			distance = processKm(HaversineKM(lat1, lon1, lat2, lon2));
 			distanceTraveled = distanceTraveled + distance;
-			}
 			String s = longitude + "\n" + latitude
 					+ "\n\nMy Currrent City is: " + cityName;
 			editLocation.setText(s);
-			editDistance.setText("Distance Traveled" + "\n" + setDistance(distanceTraveled));
+			if ((lat1 != 0) && (lon1 != 0))
+				editDistance.setText("Distance Traveled" + "\n" + setDistance(distanceTraveled));
 		}
 		
 		public double HaversineKM(double lat1, double lon1, double lat2, double lon2) {
@@ -209,18 +208,11 @@ public class MainActivity extends Activity implements OnClickListener {
 	    }
 		
 		public String setDistance(double distance) {
-			String result = "";
+			String result = distance + "";
 			if (km)
-				return result = round(distance, 3, BigDecimal.ROUND_HALF_UP) + "km";
+				return result + "km";
 			else
-				return result = round(distance, 2, BigDecimal.ROUND_HALF_UP) + "m";
-		}
-		
-		public double round(double unrounded, int precision, int roundingMode)
-		{
-		    BigDecimal bd = new BigDecimal(unrounded);
-		    BigDecimal rounded = bd.setScale(precision, roundingMode);
-		    return rounded.doubleValue();
+				return result + "m";
 		}
 		
 		@Override

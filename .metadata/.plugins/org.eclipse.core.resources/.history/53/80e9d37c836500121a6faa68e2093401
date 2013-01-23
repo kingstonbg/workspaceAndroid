@@ -1,7 +1,6 @@
 package taxi.route;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Locale;
 import android.provider.Settings;
@@ -130,13 +129,11 @@ public class MainActivity extends Activity implements OnClickListener {
 	    double lat1;	double lon1; //latitude
 	    double lat2 = 0;	double lon2 = 0; //longitude
 
-	    double distanceTraveled = 0;
-	    
-	    boolean km;
+	    String distanceTraveled = "";
 		@Override
 		public void onLocationChanged(Location loc) {
 			
-			double distance = 0;
+			String distance;
 			
 			lat1 = lat2;
 			lon1 = lon2;
@@ -170,14 +167,13 @@ public class MainActivity extends Activity implements OnClickListener {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			if (lat1!=0) {
+			
 			distance = processKm(HaversineKM(lat1, lon1, lat2, lon2));
-			distanceTraveled = distanceTraveled + distance;
-			}
+			distanceTraveled += distance;
 			String s = longitude + "\n" + latitude
 					+ "\n\nMy Currrent City is: " + cityName;
 			editLocation.setText(s);
-			editDistance.setText("Distance Traveled" + "\n" + setDistance(distanceTraveled));
+			editDistance.setText(distance);
 		}
 		
 		public double HaversineKM(double lat1, double lon1, double lat2, double lon2) {
@@ -193,35 +189,17 @@ public class MainActivity extends Activity implements OnClickListener {
 			return distanceInKm;
 		}
 		
-		public double processKm(double distance) {
-			double result = 0;
+		public String processKm(double distance) {
+			String result = "error";
 			if (distance<1) {
 				distance = 1000D * distance;
-				km = false;
-				result = distance;
+				result = distance + "m";
 			}
-			else {
-				km = true;
-				result = distance;
-			}
+			else 
+				result = distance + "km";
 			
 			return result;
 	    }
-		
-		public String setDistance(double distance) {
-			String result = "";
-			if (km)
-				return result = round(distance, 3, BigDecimal.ROUND_HALF_UP) + "km";
-			else
-				return result = round(distance, 2, BigDecimal.ROUND_HALF_UP) + "m";
-		}
-		
-		public double round(double unrounded, int precision, int roundingMode)
-		{
-		    BigDecimal bd = new BigDecimal(unrounded);
-		    BigDecimal rounded = bd.setScale(precision, roundingMode);
-		    return rounded.doubleValue();
-		}
 		
 		@Override
 		public void onProviderDisabled(String provider) {
