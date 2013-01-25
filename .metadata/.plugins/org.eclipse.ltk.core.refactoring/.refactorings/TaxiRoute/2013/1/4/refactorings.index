@@ -8,3 +8,10 @@
 1358793726750	Encapsulate field 'user'
 1358810277302	Delete element
 1358810705782	Delete element
+1359051048273	Copy file
+1359066364107	Delete elements
+1359068113311	Rename type 'Settings'
+1359068525241	Delete element
+1359068530913	Delete element
+1359069903497	Delete elements
+1359072827895	Extract method 'tryToGetDataFromPreviousLogin'

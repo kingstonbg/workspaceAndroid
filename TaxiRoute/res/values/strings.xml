@@ -7,5 +7,7 @@
     <string name="Start">Start</string>
     <string name="title_activity_main_menu">MainMenu</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="APP_ID">546697572016608</string>
+    <string name="title_activity_facebook_login">FacebookLogin</string>
 
 </resources>

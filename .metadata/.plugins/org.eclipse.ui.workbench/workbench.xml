@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="192" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -39,37 +39,20 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Statistics.java" partName="Statistics.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/Statistics.java" title="Statistics.java" tooltip="TaxiRoute/src/taxi/route/Statistics.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/Statistics.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="155" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainMenu.java" partName="MainMenu.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/MainMenu.java" title="MainMenu.java" tooltip="TaxiRoute/src/taxi/route/MainMenu.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1184" selectionTopPixel="463"/>
+</editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main_menu.xml" partName="activity_main_menu.xml" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/res/layout/activity_main_menu.xml" title="activity_main_menu.xml" tooltip="TaxiRoute/res/layout/activity_main_menu.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/res/layout/activity_main.xml" title="activity_main.xml" tooltip="TaxiRoute/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/res/layout/activity_main.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_settings.xml" partName="activity_settings.xml" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/res/layout/activity_settings.xml" title="activity_settings.xml" tooltip="TaxiRoute/res/layout/activity_settings.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/res/layout/activity_settings.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Settings.java" partName="Settings.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/Settings.java" title="Settings.java" tooltip="TaxiRoute/src/taxi/route/Settings.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/Settings.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1921" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainMenu.java" partName="MainMenu.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/MainMenu.java" title="MainMenu.java" tooltip="TaxiRoute/src/taxi/route/MainMenu.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1129" selectionTopPixel="225"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/MainActivity.java" title="MainActivity.java" tooltip="TaxiRoute/src/taxi/route/MainActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="231" selectionTopPixel="0"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="TaxiRoute Manifest" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/AndroidManifest.xml" title="TaxiRoute Manifest" tooltip="TaxiRoute/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/AndroidManifest.xml"/>
 </editor>
 </editors>
 <views>
@@ -101,8 +84,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (7 items)"/>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (13 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="651"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -456,132 +440,149 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_settings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/Settings.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/TaxiRoute/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_settings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/MyLocationListener.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/MyLocationListener.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/Statistics.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_facebook_login.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/FacebookLogin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
 </editors>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="1394" y="0"/>
+<item historyLabel="FacebookLogin.java" index="3">
+<position info="not_deleted" x="243" y="0"/>
 </item>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="443" y="0"/>
+<item historyLabel="FacebookLogin.java" index="3">
+<position info="not_deleted" x="241" y="0"/>
 </item>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="442" y="0"/>
-</item>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="FacebookLogin.java" index="3">
 <position/>
 </item>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="1511" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="1651" y="0"/>
 </item>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="activity_facebook_login.xml" index="2"/>
+<item historyLabel="FacebookLogin.java" index="3">
+<position info="not_deleted" x="317" y="20"/>
+</item>
+<item historyLabel="activity_facebook_login.xml" index="2"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="1651" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
 <position/>
 </item>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3514" y="0"/>
+</item>
+<item historyLabel="activity_main_menu.xml" index="4"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3514" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3830" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3859" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3527" y="0"/>
+</item>
+<item historyLabel="Statistics.java" index="1">
+<position info="not_deleted" x="155" y="0"/>
+</item>
+<item historyLabel="activity_main_menu.xml" index="4"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3527" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="1112" y="0"/>
+</item>
+<item historyLabel="activity_main_menu.xml" index="4"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3988" y="0"/>
+</item>
+<item historyLabel="activity_main_menu.xml" index="4"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3988" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
 <position/>
 </item>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="2603" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3514" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3512" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3514" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3512" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3479" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3486" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3458" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3787" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="2554" y="0"/>
+</item>
+<item historyLabel="MainMenu.java" index="0">
 <position/>
 </item>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="1276" y="0"/>
-</item>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="1731" y="0"/>
-</item>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="MainMenu.java" index="0">
 <position/>
 </item>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="MainMenu.java" index="0">
 <position/>
 </item>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="682" y="0"/>
-</item>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="MainMenu.java" index="0">
 <position/>
 </item>
-<item historyLabel="activity_settings.xml" index="2"/>
-<item historyLabel="Settings.java" index="3">
+<item historyLabel="MainMenu.java" index="0">
 <position/>
 </item>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="2232" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position/>
 </item>
-<item historyLabel="activity_settings.xml" index="2"/>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="637" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position/>
 </item>
-<item historyLabel="activity_main_menu.xml" index="0"/>
-<item historyLabel="activity_main.xml" index="1"/>
-<item historyLabel="activity_settings.xml" index="2"/>
-<item historyLabel="Settings.java" index="3">
-<position info="not_deleted" x="637" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position/>
 </item>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="3470" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position/>
 </item>
-<item historyLabel="TaxiRoute Manifest" index="5"/>
-<item historyLabel="activity_settings.xml" index="6"/>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="3470" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3148" y="0"/>
 </item>
-<item historyLabel="activity_main_menu.xml" index="7"/>
-<item historyLabel="activity_main.xml" index="8"/>
-<item historyLabel="TaxiRoute Manifest" index="5"/>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="3470" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3190" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="1003" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3189" y="0"/>
 </item>
-<item historyLabel="MyLocationListener.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3253" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="5181" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3252" y="0"/>
 </item>
-<item historyLabel="MyLocationListener.java" index="10">
-<position info="not_deleted" x="180" y="0"/>
+<item historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="3188" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="5181" y="0"/>
-</item>
-<item historyLabel="TaxiRoute Manifest" index="5"/>
-<item historyLabel="MyLocationListener.java" index="10">
-<position info="not_deleted" x="180" y="0"/>
-</item>
-<item historyLabel="TaxiRoute Manifest" index="5"/>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="3051" y="0"/>
-</item>
-<item historyLabel="activity_main.xml" index="8"/>
-<item historyLabel="TaxiRoute Manifest" index="5"/>
-<item historyLabel="activity_main.xml" index="8"/>
-<item historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="3051" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="11">
-<position info="not_deleted" x="1129" y="0"/>
-</item>
-<item historyLabel="activity_main.xml" index="8"/>
-<item historyLabel="activity_main_menu.xml" index="7"/>
-<item historyLabel="activity_main.xml" index="8"/>
-<item historyLabel="MainMenu.java" index="11">
-<position info="not_deleted" x="1129" y="0"/>
-</item>
-<item active="true" historyLabel="MainActivity.java" index="4">
-<position info="not_deleted" x="4832" y="0"/>
+<item active="true" historyLabel="MainMenu.java" index="0">
+<position info="not_deleted" x="1139" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -593,6 +594,7 @@
 <trimItem IMemento.internal.id="left"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
@@ -603,19 +605,45 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.HeapStatus"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main_menu.xml" tooltip="TaxiRoute/res/layout/activity_main_menu.xml">
+<persistable path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="TaxiRoute/res/values/strings.xml">
+<persistable path="/TaxiRoute/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FacebookLogin.java" tooltip="TaxiRoute/src/taxi/route/FacebookLogin.java">
+<persistable path="/TaxiRoute/src/taxi/route/FacebookLogin.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_facebook_login.xml" tooltip="TaxiRoute/res/layout/activity_facebook_login.xml">
+<persistable path="/TaxiRoute/res/layout/activity_facebook_login.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="TaxiRoute/gen/taxi/route/R.java">
+<persistable path="/TaxiRoute/gen/taxi/route/R.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_settings.xml" tooltip="TaxiRoute/res/layout/activity_settings.xml">
+<persistable path="/TaxiRoute/res/layout/activity_settings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="TaxiRoute/res/layout/activity_main.xml">
+<persistable path="/TaxiRoute/res/layout/activity_main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TaxiRoute/AndroidManifest.xml">
+<persistable path="/TaxiRoute/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuthorizationClient.java" tooltip="FacebookSDK/src/com/facebook/AuthorizationClient.java">
+<persistable path="/FacebookSDK/src/com/facebook/AuthorizationClient.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings_activity_settings.xml" tooltip="TaxiRoute/res/values/strings_activity_settings.xml">
+<persistable path="/TaxiRoute/res/values/strings_activity_settings.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyLocationListener.java" tooltip="TaxiRoute/src/taxi/route/MyLocationListener.java">
 <persistable path="/TaxiRoute/src/taxi/route/MyLocationListener.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyLocationListener.java" tooltip="TaxiRoute/src/MyLocationListener.java">
 <persistable path="/TaxiRoute/src/MyLocationListener.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TaxiRoute/AndroidManifest.xml">
-<persistable path="/TaxiRoute/AndroidManifest.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="TaxiRoute/src/taxi/route/MainActivity.java">
 <persistable path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
@@ -625,30 +653,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Settings.java" tooltip="TaxiRoute/src/taxi/route/Settings.java">
 <persistable path="/TaxiRoute/src/taxi/route/Settings.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_settings.xml" tooltip="TaxiRoute/res/layout/activity_settings.xml">
-<persistable path="/TaxiRoute/res/layout/activity_settings.xml"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="MenuInflater.class" tooltip="android.view.MenuInflater">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=TaxiRoute/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;android.view(MenuInflater.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="TaxiRoute/res/layout/activity_main.xml">
-<persistable path="/TaxiRoute/res/layout/activity_main.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main_menu.xml" tooltip="TaxiRoute/res/layout/activity_main_menu.xml">
-<persistable path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main_menu.xml" tooltip="TaxiRoute/res/layout/main_menu.xml">
-<persistable path="/TaxiRoute/res/layout/main_menu.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="TaxiRoute/res/values-v11/styles.xml">
-<persistable path="/TaxiRoute/res/values-v11/styles.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="TaxiRoute/res/values/strings.xml">
-<persistable path="/TaxiRoute/res/values/strings.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="styles.xml" tooltip="TaxiRoute/res/values/styles.xml">
-<persistable path="/TaxiRoute/res/values/styles.xml"/>
 </file>
 </mruList>
 </workbench>

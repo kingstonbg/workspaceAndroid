@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Locale;
+
 import android.provider.Settings;
 import android.location.Address;
 import android.location.Geocoder;
@@ -71,7 +72,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			locationListener = new MyLocationListener();
 
 			locationMangaer.requestLocationUpdates(
-					LocationManager.GPS_PROVIDER, 5000, 10, locationListener);
+					LocationManager.GPS_PROVIDER, 500, 10, locationListener);
 
 		} else {
 			alertbox("Gps Status!!", "Your GPS is: OFF");
