@@ -217,8 +217,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				return result = round(distance, 2, BigDecimal.ROUND_HALF_UP) + "m";
 		}
 		
-		public double round(double unrounded, int precision, int roundingMode)
-		{
+		public double round(double unrounded, int precision, int roundingMode) {
 		    BigDecimal bd = new BigDecimal(unrounded);
 		    BigDecimal rounded = bd.setScale(precision, roundingMode);
 		    return rounded.doubleValue();

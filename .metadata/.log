@@ -2203,3 +2203,13 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.android.i
 
 !ENTRY org.eclipse.jdt.core 4 0 2013-01-25 12:52:53.905
 !MESSAGE Invalid ZIP archive: C:\Stuff\Programming\facebook-android-sdk-3.0\facebook\bin\facebooksdk.jar
+!SESSION 2013-01-29 12:44:43.820 -----------------------------------------------
+eclipse.buildId=v21.0.0-519525
+java.version=1.7.0_04
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-01-29 12:44:45.468
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
