@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="192" y="0">
+<window height="768" maximized="true" width="681" x="681" y="2">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="250"/>
@@ -18,7 +18,7 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -40,33 +40,35 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Statistics.java" partName="Statistics.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/Statistics.java" title="Statistics.java" tooltip="TaxiRoute/src/taxi/route/Statistics.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/Statistics.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="432" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainMenu.java" partName="MainMenu.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/MainMenu.java" title="MainMenu.java" tooltip="TaxiRoute/src/taxi/route/MainMenu.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2460" selectionTopPixel="928"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main_menu.xml" partName="activity_main_menu.xml" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/res/layout/activity_main_menu.xml" title="activity_main_menu.xml" tooltip="TaxiRoute/res/layout/activity_main_menu.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FacebookConnector.java" partName="FacebookConnector.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/FacebookConnector.java" title="FacebookConnector.java" tooltip="TaxiRoute/src/taxi/route/FacebookConnector.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/FacebookConnector.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3089" selectionTopPixel="780"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/MainActivity.java" title="MainActivity.java" tooltip="TaxiRoute/src/taxi/route/MainActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2402" selectionTopPixel="1273"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6554" selectionTopPixel="0"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/res/layout/activity_main.xml" title="activity_main.xml" tooltip="TaxiRoute/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/res/layout/activity_main.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainMenu.java" partName="MainMenu.java" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/src/taxi/route/MainMenu.java" title="MainMenu.java" tooltip="TaxiRoute/src/taxi/route/MainMenu.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3012" selectionTopPixel="1315"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main_menu.xml" partName="activity_main_menu.xml" path="C:/Users/Kingston/workspaceAndroid/TaxiRoute/res/layout/activity_main_menu.xml" title="activity_main_menu.xml" tooltip="TaxiRoute/res/layout/activity_main_menu.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress">
 <viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
 </view>
 <view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices"/>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -93,7 +95,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (15 items)"/>
+<category IMemento.internal.id="Warnings (53 items)"/>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="651"/>
@@ -274,6 +277,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="org.eclipse.ui.views.ProgressView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
@@ -299,16 +303,16 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7387097" ratioLeft="458" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.19570053" ratioLeft="264" ratioRight="1085" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.55454546" ratioLeft="366" ratioRight="294" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
@@ -317,10 +321,11 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="right" ratio="0.80550456" ratioLeft="439" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
@@ -388,20 +393,29 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1014" ratioRight="338" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1014" ratioRight="338" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74962294" ratioLeft="497" ratioRight="166" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74962294" ratioLeft="497" ratioRight="166" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
@@ -409,34 +423,44 @@
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@69932ebb" ratio="0.5" ratioLeft="676" ratioRight="676" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">&#x0A;<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@69932ebb" ratio="0.5" ratioLeft="676" ratioRight="676" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.44869214" ratioLeft="223" ratioRight="274" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1014" ratioRight="338" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info part="org.eclipse.ui.editorss" ratio="0.5743381" ratioLeft="282" ratioRight="209" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1014" ratioRight="338" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="676" ratioRight="676" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="676" ratioRight="676" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -448,161 +472,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/TaxiRoute/res/layout/activity_main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/Statistics.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FacebookSDK/src/com/facebook/android/AsyncFacebookRunner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/Statistics.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TaxiRoute/src/taxi/route/FacebookConnector.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=FacebookSDK/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;android.util(Log.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=FacebookSDK/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;java.lang(ClassLoader.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=FacebookSDK/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;org.json(JSONObject.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=TaxiRoute/C:\/Stuff\/Programming\/facebook-android-sdk-3.0\/facebook\/bin\/facebooksdk.jar&lt;com.facebook.android(Facebook.class"/>
 </editors>
-<item historyLabel="activity_main_menu.xml" index="1"/>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3988" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2075" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2135" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="2603" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3514" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3512" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3514" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3512" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3479" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3486" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3458" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3787" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="2554" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3148" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3190" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3189" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3253" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3252" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="3188" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="0">
-<position info="not_deleted" x="1139" y="0"/>
-</item>
-<item historyLabel="MainActivity.java" index="2">
+<item historyLabel="Log.class" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="activity_main.xml" index="3"/>
-<item historyLabel="MainActivity.java" index="2">
-<position info="not_deleted" x="2008" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2161" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="1755" y="0"/>
+<item historyLabel="ClassLoader.class" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Statistics.java" index="5">
-<position info="not_deleted" x="648" y="0"/>
-</item>
-<item historyLabel="MainActivity.java" index="2">
-<position info="not_deleted" x="1841" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="1176" y="0"/>
-</item>
-<item historyLabel="MainMenu.java" index="4">
+<item historyLabel="JSONObject.class" index="3">
 <position/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2161" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2135" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2161" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2299" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2627" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
 <position/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="2618" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2077" y="0"/>
 </item>
-<item historyLabel="AsyncFacebookRunner.java" index="6">
-<position info="not_deleted" x="4" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2135" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="2608" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2161" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="2738" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2161" y="0"/>
 </item>
-<item historyLabel="Statistics.java" index="7">
-<position info="not_deleted" x="648" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2299" y="0"/>
 </item>
-<item historyLabel="Statistics.java" index="7">
-<position info="not_deleted" x="196" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2109" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="8">
-<position info="not_deleted" x="2402" y="0"/>
+<item historyLabel="Facebook.class" index="4">
+<position info="not_deleted" x="34251" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="4343" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2109" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="5344" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2308" y="0"/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="4992" y="0"/>
+<item historyLabel="JSONObject.class" index="3">
+<position/>
 </item>
-<item historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="2581" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2308" y="0"/>
 </item>
-<item active="true" historyLabel="MainMenu.java" index="4">
-<position info="not_deleted" x="2600" y="0"/>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2139" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2135" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2161" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2163" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2627" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2078" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2076" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2139" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2135" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2163" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2627" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2161" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2664" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2211" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2254" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2308" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2135" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2163" y="0"/>
+</item>
+<item historyLabel="ClassLoader.class" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="JSONObject.class" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2163" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2215" y="0"/>
+</item>
+<item historyLabel="JSONObject.class" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2215" y="0"/>
+</item>
+<item historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2256" y="0"/>
+</item>
+<item active="true" historyLabel="FacebookConnector.java" index="0">
+<position info="not_deleted" x="2664" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -616,6 +640,10 @@
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 <trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -629,50 +657,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AsyncFacebookRunner.java" tooltip="FacebookSDK/src/com/facebook/android/AsyncFacebookRunner.java">
-<persistable path="/FacebookSDK/src/com/facebook/android/AsyncFacebookRunner.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ClassLoader.class" tooltip="java.lang.ClassLoader">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FacebookSDK/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;java.lang(ClassLoader.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="TaxiRoute/res/layout/activity_main.xml">
-<persistable path="/TaxiRoute/res/layout/activity_main.xml"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JSONObject.class" tooltip="org.json.JSONObject">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=TaxiRoute/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;org.json(JSONObject.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="TaxiRoute/src/taxi/route/MainActivity.java">
-<persistable path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Facebook.class" tooltip="com.facebook.android.Facebook">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=TaxiRoute/C:\/Stuff\/Programming\/facebook-android-sdk-3.0\/facebook\/bin\/facebooksdk.jar&lt;com.facebook.android(Facebook.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Log.class" tooltip="android.util.Log">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FacebookSDK/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;android.util(Log.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Instrumentation.class" tooltip="android.app.Instrumentation">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FacebookSDK/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;android.app(Instrumentation.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Activity.class" tooltip="android.app.Activity">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FacebookSDK/C:\/Stuff\/Programming\/adt-bundle-windows\/sdk\/platforms\/android-4.2\/android.jar&lt;android.app(Activity.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main_menu.xml" tooltip="TaxiRoute/res/layout/activity_main_menu.xml">
 <persistable path="/TaxiRoute/res/layout/activity_main_menu.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="TaxiRoute/res/values/strings.xml">
-<persistable path="/TaxiRoute/res/values/strings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AsyncFacebookRunner.java" tooltip="FacebookSDK/src/com/facebook/android/AsyncFacebookRunner.java">
+<persistable path="/FacebookSDK/src/com/facebook/android/AsyncFacebookRunner.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FacebookLogin.java" tooltip="TaxiRoute/src/taxi/route/FacebookLogin.java">
-<persistable path="/TaxiRoute/src/taxi/route/FacebookLogin.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Session.class" tooltip="com.facebook.Session">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=TaxiRoute/C:\/Stuff\/Programming\/facebook-android-sdk-3.0\/facebook\/bin\/facebooksdk.jar&lt;com.facebook(Session.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_facebook_login.xml" tooltip="TaxiRoute/res/layout/activity_facebook_login.xml">
-<persistable path="/TaxiRoute/res/layout/activity_facebook_login.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainMenu.java" tooltip="TaxiRoute/src/taxi/route/MainMenu.java">
+<persistable path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="TaxiRoute/gen/taxi/route/R.java">
-<persistable path="/TaxiRoute/gen/taxi/route/R.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="TaxiRoute/src/taxi/route/MainActivity.java">
+<persistable path="/TaxiRoute/src/taxi/route/MainActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_settings.xml" tooltip="TaxiRoute/res/layout/activity_settings.xml">
-<persistable path="/TaxiRoute/res/layout/activity_settings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FacebookConnector.java" tooltip="TaxiRoute/src/taxi/route/FacebookConnector.java">
+<persistable path="/TaxiRoute/src/taxi/route/FacebookConnector.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TaxiRoute/AndroidManifest.xml">
 <persistable path="/TaxiRoute/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuthorizationClient.java" tooltip="FacebookSDK/src/com/facebook/AuthorizationClient.java">
-<persistable path="/FacebookSDK/src/com/facebook/AuthorizationClient.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Util.java" tooltip="FacebookSDK/src/com/facebook/android/Util.java">
+<persistable path="/FacebookSDK/src/com/facebook/android/Util.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings_activity_settings.xml" tooltip="TaxiRoute/res/values/strings_activity_settings.xml">
-<persistable path="/TaxiRoute/res/values/strings_activity_settings.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyLocationListener.java" tooltip="TaxiRoute/src/taxi/route/MyLocationListener.java">
-<persistable path="/TaxiRoute/src/taxi/route/MyLocationListener.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyLocationListener.java" tooltip="TaxiRoute/src/MyLocationListener.java">
-<persistable path="/TaxiRoute/src/MyLocationListener.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainMenu.java" tooltip="TaxiRoute/src/taxi/route/MainMenu.java">
-<persistable path="/TaxiRoute/src/taxi/route/MainMenu.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="TaxiRoute/res/layout/activity_main.xml">
+<persistable path="/TaxiRoute/res/layout/activity_main.xml"/>
 </file>
 </mruList>
 </workbench>

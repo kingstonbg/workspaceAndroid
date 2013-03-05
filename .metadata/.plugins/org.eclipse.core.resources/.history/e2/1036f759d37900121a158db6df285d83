@@ -1,5 +1,0 @@
-package taxi.route;
-
-public abstract class BaseDialogListener {
-
-}

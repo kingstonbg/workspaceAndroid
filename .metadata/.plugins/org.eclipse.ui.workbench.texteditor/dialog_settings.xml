@@ -2,9 +2,9 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="158" key="DIALOG_Y_ORIGIN"/>
-		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="778" key="DIALOG_X_ORIGIN"/>
+		<item value="110" key="DIALOG_Y_ORIGIN"/>
+		<item value="305" key="DIALOG_HEIGHT"/>
+		<item value="804" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -13,10 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="LocationChanged" key="selection"/>
+		<item value="btnLogin" key="selection"/>
 		<list key="findhistory">
-			<item value="locationChanged"/>
-			<item value="mangaer"/>
+			<item value="btnLogin"/>
+			<item value="doInBackground"/>
+			<item value="statistics"/>
+			<item value="error"/>
+			<item value="login"/>
+			<item value="1.6"/>
+			<item value="*1.6"/>
+			<item value="R"/>
 		</list>
 		<list key="replacehistory">
 		</list>

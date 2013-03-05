@@ -3,12 +3,16 @@ package taxi.route;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.facebook.Session;
 import com.facebook.android.AsyncFacebookRunner;
 import com.facebook.android.DialogError;
 import com.facebook.android.Facebook;
 import com.facebook.android.Facebook.DialogListener;
 import com.facebook.android.FacebookError;
+import com.facebook.android.Util;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -31,10 +35,10 @@ import android.widget.Toast;
 
 public class MainMenu extends Activity {
 	
-	ImageView btnLogin;
 	Facebook fb;
 	String fbName;
-	private SharedPreferences shared_pref;
+	String fbId;
+	private final String MY_TAG = "TaxiMainMenu";
 	private static final String FACEBOOK_PERMISSION = "publish_stream";
 	private static final String TAG = "FacebookSample";
 	private static final String MSG = "Message from FacebookSample";
@@ -42,7 +46,7 @@ public class MainMenu extends Activity {
 	private final Handler mFacebookHandler = new Handler();
 	private FacebookConnector facebookConnector;
 	private TextView loginStatus;
-	
+	private Button clearCredentials;
 	final Runnable mUpdateFacebookNotification = new Runnable() {
         public void run() {
         	Toast.makeText(getBaseContext(), "Facebook updated !", Toast.LENGTH_LONG).show();
@@ -54,7 +58,7 @@ public class MainMenu extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_menu);
 		loginStatus = (TextView)findViewById(R.id.login_status);
-		Button clearCredentials = (Button) findViewById(R.id.btn_clear_credentials);
+		clearCredentials = (Button) findViewById(R.id.btn_clear_credentials);
 		Button share = (Button)findViewById(R.id.share);
 		String APP_ID = getString(R.string.APP_ID);
 		fb = new Facebook(APP_ID);
@@ -63,17 +67,23 @@ public class MainMenu extends Activity {
 				getApplicationContext(), new String[] {FACEBOOK_PERMISSION});
 		
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-		
+		updateLoginStatus();
 		share.setOnClickListener(new View.OnClickListener() {
-        
             public void onClick(View v) {
-        		postMessage();
+				postMessageToFb();
+				updateLoginStatus();
             }
         });
 		
+		
 		clearCredentials.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            	clearCredentials();
+            	if(facebookConnector.getFacebook().isSessionValid()) {
+            		clearCredentials();
+            	}
+            	else {
+            		facebookConnector.login();
+            	}
             	updateLoginStatus();
             }
         });
@@ -84,7 +94,7 @@ public class MainMenu extends Activity {
 	private void createButtons() {
 		createBtnExit();
 		createBtnStart();
-		createBtnSettings();		
+		createBtnStatistics();		
 	}
 
 	private void createBtnExit() {
@@ -107,20 +117,22 @@ public class MainMenu extends Activity {
 	}
 	
 	private void updateFbButtonImage() {
-		if(fb.isSessionValid()) {
-			btnLogin.setImageResource(R.drawable.logout_button);
+		if(facebookConnector.getFacebook().isSessionValid()) {
+			clearCredentials.setBackgroundResource(R.drawable.logout_button);
 		}
 		else {
-			btnLogin.setImageResource(R.drawable.login_button);
+			clearCredentials.setBackgroundResource(R.drawable.login_button);
 		}
 	}
 	
-	private void createBtnSettings() {
+	private void createBtnStatistics() {
 		Button btnSettings = (Button) findViewById(R.id.buttonStatistics);
 		btnSettings.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				Intent intent = new Intent(MainMenu.this, Statistics.class);
-				MainMenu.this.startActivity(intent);
+				//Intent intent = new Intent(MainMenu.this, Statistics.class);
+				//MainMenu.this.startActivity(intent);
+				facebookConnector.login();
+				Toast.makeText(getBaseContext(), facebookConnector.getUserName() + " " + facebookConnector.getId() , Toast.LENGTH_LONG).show();
 			}
 		});
 	}
@@ -159,11 +171,12 @@ public class MainMenu extends Activity {
 	}
 
 	public void updateLoginStatus() {
-		loginStatus.setText("Logged into Facebook as " + fbName + " " + facebookConnector.getFacebook().isSessionValid());
+		loginStatus.setText("Logged into Facebook as "+ facebookConnector.getUserName() + " " +
+				facebookConnector.getFacebook().isSessionValid());
+		updateFbButtonImage();
 	}
-	
-	public void postMessage() {
 
+	public void postMessageToFb() {
 		if (facebookConnector.getFacebook().isSessionValid()) {
 			postMessageInThread();
 		} else {
@@ -187,7 +200,6 @@ public class MainMenu extends Activity {
 	private void postMessageInThread() {
 		Thread t = new Thread() {
 			public void run() {
-
 		    	try {
 		    		facebookConnector.postMessageOnWall("test");
 					mFacebookHandler.post(mUpdateFacebookNotification);
@@ -200,15 +212,18 @@ public class MainMenu extends Activity {
 	}
 	
 	private void clearCredentials() {
-		try {
-			facebookConnector.getFacebook().logout(getApplicationContext());
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		Thread t = new Thread() {
+			public void run() {
+		    	try {
+		    		facebookConnector.getFacebook().logout(getApplicationContext());
+				} catch (Exception ex) {
+					
+				}
+		    }
+		};
+		t.start();
 	}
 	
 	/*------------------------------F A C E B O O K----------------------------------*/
-	
+
 }

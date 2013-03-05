@@ -1,7 +1,11 @@
 package taxi.route;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import taxi.route.SessionEvents.AuthListener;
@@ -11,26 +15,35 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
+import android.widget.TextView;
 
+import com.facebook.Request;
+import com.facebook.Response;
+import com.facebook.Session;
 import com.facebook.android.AsyncFacebookRunner;
+import com.facebook.android.AsyncFacebookRunner.RequestListener;
 import com.facebook.android.DialogError;
 import com.facebook.android.Facebook;
 import com.facebook.android.Facebook.DialogListener;
 import com.facebook.android.FacebookError;
 import com.facebook.android.Util;
+import com.facebook.model.GraphUser;
 
 public class FacebookConnector {
-
+	private final String MY_TAG = "Taxi";
 	private Facebook facebook = null;
 	private Context context;
 	private String[] permissions;
 	private Handler mHandler;
 	private Activity activity;
 	private SessionListener mSessionListener = new SessionListener();;
-
+	private static final String TAG = "FacebookSample";
+	String fbName;
+	String fbId;
+	Session sessiont;
 	public FacebookConnector(String appId,Activity activity,Context context,String[] permissions) {
 		this.facebook = new Facebook(appId);
-
 		SessionStore.restore(facebook, context);
         SessionEvents.addAuthListener(mSessionListener);
         SessionEvents.addLogoutListener(mSessionListener);
@@ -43,9 +56,35 @@ public class FacebookConnector {
 
 	public void login() {
         if (!facebook.isSessionValid()) {
-            facebook.authorize(this.activity, this.permissions,new LoginDialogListener());
+            facebook.authorize(this.activity, this.permissions, new LoginDialogListener());
         }
-    }
+
+		final Bundle param = new Bundle();
+		Thread t = new Thread() {
+			public void run() {
+				try {
+					String response = facebook.request("me", param, "GET");
+					Log.d(TAG, response);
+					JSONObject json = new JSONObject(response);
+
+					    fbId   = json.optString("id");
+	    				fbName = json.optString("name");
+	    				
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (MalformedURLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (Exception ex) {
+				}
+			};
+		};
+		t.start();
+	}
 
 	public void logout() {
         SessionEvents.onLogoutBegin();
@@ -97,6 +136,14 @@ public class FacebookConnector {
             });
         }
     }
+      
+    public String getUserName () {
+    	return fbName;
+    }
+
+    public String getId() {
+    	return fbId;
+	}
     
     private class SessionListener implements AuthListener, LogoutListener {
         

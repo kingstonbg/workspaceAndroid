@@ -33,14 +33,16 @@ public class MainActivity extends Activity implements OnClickListener {
 	private LocationManager locationMangaer=null;  
 	private LocationListener locationListener=null;   
 	  
-	private Button btnGetLocation = null;  
+	private Button btnGetLocation = null;
+	private Button btnStop        = null;
 	private EditText editLocation = null;
 	private EditText editDistance = null;
 	private ProgressBar pb =null;  
 	   
 	private static final String TAG = "Debug";  
 	private Boolean flag = false;
-
+	private Boolean isTracking = false;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,12 +56,23 @@ public class MainActivity extends Activity implements OnClickListener {
 		editLocation = (EditText) findViewById(R.id.editTextLocation);
 		editDistance = (EditText) findViewById(R.id.editTextDistance);
 		btnGetLocation = (Button) findViewById(R.id.btnLocation);
+		btnStop = (Button) findViewById(R.id.btnStop);
+		btnStop.setOnClickListener(this);
 		btnGetLocation.setOnClickListener(this);
-
+		if (isTracking) {
+			btnStop.setEnabled(true);
+			btnGetLocation.setEnabled(false);
+		}
+		else {
+			btnStop.setEnabled(false);
+			btnGetLocation.setEnabled(true);
+		}
+		
 		locationMangaer = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
     }
     
 	public void onClick(View v) {
+		if (!isTracking) {
 		flag = displayGpsStatus();
 		if (flag) {
 
@@ -74,10 +87,17 @@ public class MainActivity extends Activity implements OnClickListener {
 			locationMangaer.requestLocationUpdates(
 					LocationManager.GPS_PROVIDER, 500, 10, locationListener);
 
+			isTracking = true;
+			btnGetLocation.setEnabled(false);
+			btnStop.setEnabled(true);
 		} else {
 			alertbox("Gps Status!!", "Your GPS is: OFF");
 		}
-
+		}
+		else {
+			locationMangaer.removeUpdates(locationListener);
+			isTracking = false;
+		}
 	}  
 
 	private Boolean displayGpsStatus() {
@@ -100,7 +120,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				.setPositiveButton("Gps On",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
-								Intent myIntent = new Intent(Settings.ACTION_SECURITY_SETTINGS);
+								Intent myIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
 								startActivity(myIntent);
 								dialog.cancel();
 							}
@@ -124,7 +144,7 @@ public class MainActivity extends Activity implements OnClickListener {
     
 	private class MyLocationListener implements LocationListener {
 		
-		static final double eQuatorialEarthRadius = 6378.1370D;
+		static final double eQuatorialEarthRadius = 6371;
 	    static final double d2r = (Math.PI / 180D);
 	    
 	    double dlat;	double dlon; //distance
@@ -189,9 +209,8 @@ public class MainActivity extends Activity implements OnClickListener {
 					Math.pow(Math.sin(dlon / 2D), 2D);
 			double c = 2D * Math.atan2(Math.sqrt(a), Math.sqrt(1D - a ));
 			double distanceInKm = eQuatorialEarthRadius * c;
-			Math.round(distanceInKm);
 			
-			return distanceInKm;
+			return Math.round(distanceInKm * 1.609344);
 		}
 		
 		public double processKm(double distance) {
