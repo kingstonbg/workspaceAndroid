@@ -9,5 +9,6 @@
     <string name="title_activity_settings">Settings</string>
     <string name="APP_ID">546697572016608</string>
     <string name="title_activity_facebook_login">FacebookLogin</string>
+    <string name="title_activity_main">Track Location</string>
 
 </resources>

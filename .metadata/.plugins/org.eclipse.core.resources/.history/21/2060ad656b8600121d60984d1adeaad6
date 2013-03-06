@@ -1,0 +1,11 @@
+package taxi.route;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class AfterTracking extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
+}

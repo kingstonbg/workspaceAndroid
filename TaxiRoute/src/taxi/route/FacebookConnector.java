@@ -39,8 +39,8 @@ public class FacebookConnector {
 	private Activity activity;
 	private SessionListener mSessionListener = new SessionListener();;
 	private static final String TAG = "FacebookSample";
-	String fbName;
-	String fbId;
+	static String fbName;
+	static String fbId;
 	Session sessiont;
 	public FacebookConnector(String appId,Activity activity,Context context,String[] permissions) {
 		this.facebook = new Facebook(appId);
@@ -84,12 +84,14 @@ public class FacebookConnector {
 			};
 		};
 		t.start();
+		MainMenu.updateLoginStatus();
 	}
 
 	public void logout() {
         SessionEvents.onLogoutBegin();
         AsyncFacebookRunner asyncRunner = new AsyncFacebookRunner(this.facebook);
         asyncRunner.logout(this.context, new LogoutRequestListener());
+        MainMenu.updateLoginStatus();
 	}
 
 	public void postMessageOnWall(String msg) {
@@ -137,11 +139,11 @@ public class FacebookConnector {
         }
     }
       
-    public String getUserName () {
+    public static String getUserName () {
     	return fbName;
     }
 
-    public String getId() {
+    public static String getId() {
     	return fbId;
 	}
     

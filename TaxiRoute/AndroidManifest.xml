@@ -61,6 +61,10 @@
             android:name="taxi.route.FacebookLogin"
             android:label="@string/title_activity_facebook_login" >
         </activity>
+        <activity 
+            android:name="taxi.route.AfterTracking"
+            android:label="After Tracking">
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

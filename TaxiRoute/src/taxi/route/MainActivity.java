@@ -43,6 +43,10 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Boolean flag = false;
 	private Boolean isTracking = false;
 	
+	double distanceTraveled = 0;
+	double moneyPaid = 0;
+	boolean km;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,6 +101,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		else {
 			locationMangaer.removeUpdates(locationListener);
 			isTracking = false;
+			Intent intent = new Intent(MainActivity.this, AfterTracking.class);
+			MainActivity.this.startActivity(intent);
 		}
 	}  
 
@@ -142,6 +148,20 @@ public class MainActivity extends Activity implements OnClickListener {
         return true;
     }
     
+    public String setDistance(double distance) {
+		String result = "";
+		if (km)
+			return result = round(distance, 3, BigDecimal.ROUND_HALF_UP) + "km";
+		else
+			return result = round(distance, 2, BigDecimal.ROUND_HALF_UP) + "m";
+	}
+    
+    public double round(double unrounded, int precision, int roundingMode) {
+	    BigDecimal bd = new BigDecimal(unrounded);
+	    BigDecimal rounded = bd.setScale(precision, roundingMode);
+	    return rounded.doubleValue();
+	}
+    
 	private class MyLocationListener implements LocationListener {
 		
 		static final double eQuatorialEarthRadius = 6371;
@@ -150,10 +170,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	    double dlat;	double dlon; //distance
 	    double lat1;	double lon1; //latitude
 	    double lat2 = 0;	double lon2 = 0; //longitude
-
-	    double distanceTraveled = 0;
 	    
-	    boolean km;
 		@Override
 		public void onLocationChanged(Location loc) {
 			
@@ -174,6 +191,7 @@ public class MainActivity extends Activity implements OnClickListener {
 							+ loc.getLongitude(), Toast.LENGTH_SHORT).show();
 			String longitude = "Longitude: " + loc.getLongitude();
 			lon1 = loc.getLongitude();
+			lat1 = loc.getLatitude();
 			Log.v(TAG, longitude);
 			String latitude = "Latitude: " + loc.getLatitude();
 			Log.v(TAG, latitude);
@@ -195,11 +213,12 @@ public class MainActivity extends Activity implements OnClickListener {
 			distance = processKm(HaversineKM(lat1, lon1, lat2, lon2));
 			distanceTraveled = distanceTraveled + distance;
 			}
+
 			String s = longitude + "\n" + latitude
 					+ "\n\nMy Currrent City is: " + cityName;
 			editLocation.setText(s);
 			editDistance.setText("Distance Traveled" + "\n" + setDistance(distanceTraveled));
-		}
+ 		}
 		
 		public double HaversineKM(double lat1, double lon1, double lat2, double lon2) {
 			dlon = (lon2 - lon1) * d2r;
@@ -227,21 +246,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			
 			return result;
 	    }
-		
-		public String setDistance(double distance) {
-			String result = "";
-			if (km)
-				return result = round(distance, 3, BigDecimal.ROUND_HALF_UP) + "km";
-			else
-				return result = round(distance, 2, BigDecimal.ROUND_HALF_UP) + "m";
-		}
-		
-		public double round(double unrounded, int precision, int roundingMode) {
-		    BigDecimal bd = new BigDecimal(unrounded);
-		    BigDecimal rounded = bd.setScale(precision, roundingMode);
-		    return rounded.doubleValue();
-		}
-		
+				
 		@Override
 		public void onProviderDisabled(String provider) {
 			// TODO Auto-generated method stub
@@ -256,6 +261,15 @@ public class MainActivity extends Activity implements OnClickListener {
 		public void onStatusChanged(String provider, int status, Bundle extras) {
 			// TODO Auto-generated method stub
 		}
+		
 	}
-
+	
+	public String getDistanceTraveled() {
+		return setDistance(distanceTraveled);
+	}
+	
+	public double getMoneyPaid() {
+		return moneyPaid;
+	}
+	
 }
